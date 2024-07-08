@@ -1,0 +1,318 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %} Pricing{% endblock title %}
+{% block body %}
+{% block bg %}
+    <style>
+        #mainNav{
+            background: #0d6efd;
+        }
+    </style>
+{% endblock bg %}
+<section class="page-section">
+    <div class="text-center">
+        <h2 class="section-heading text-uppercase mt-5">Pricing</h2>
+        <h3 class="section-subheading text-muted mb-5">Very Affordable Web development Prices</h3>
+    </div>
+    <br>
+    <h4 class="text-center" style="margin-left:5rem;">Web Development</h4>
+    <div class="row d-flex p-lg-5 mx-lg-auto" style="justify-content: space-evenly;">
+        <div class="col-lg-3 p-4 m-2 price" style="border: 2px solid rgb(162, 162, 247);border-radius: 30px;margin: 0 20px; background-color: rgba(173, 216, 230,0.3);height: fit-content; max-width: 400px;">
+            <span class="text-uppercase fw-bolder mx-auto h5" style="margin: 20px 0!important;">Standard</span>
+            <p>This plan is suitable for a website with a simple structure like portfolio websites, personal websites, landing pages,etc. </p>
+            <span class="text-light rounded" style="font-size: 12px;padding: 5px;background-color: gold;">Starting from</span>
+            <h3 style="margin: 15px 0; display: flex;align-items: center;"><span class="text text-muted" style="font-size: 15px;text-decoration: line-through;margin-right: 10px;">GH&cent; 3,200</span> GH&cent; 2,700</h3>
+            <button class="btn rounded-5 col-12" style="border: 2px solid royalblue;" id="selectPackage">Select package <i class="fa fa-arrow-right"></i></button>
+            <div class="container-fluid mb-4">
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>FREE domain & hosting for 1 year</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Up to 5 pages</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Responsive design</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Blog and news section</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Copywriting</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>SSL Certificate</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Contact form</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Professional emails</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Social media integration</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-3 p-4 m-2 my-4 price" style="position: relative; border: 2px solid royalblue;border-radius: 30px;margin: 0 20px; background-color: rgba(173, 216, 230,0.3);height: fit-content; max-width: 400px;">
+            <p id="rcd" style="
+                width: 200px;
+                display: flex;
+                justify-content: center;
+                height: fit-content;
+                position: absolute;
+                top: -16px;
+                left: 20%;
+                background: orangered;
+                color: #fff;
+                border-radius: 20px;
+                "><span class="text-center">MOST POPULAR</span> </p>
+            <span class="text-uppercase fw-bolder mx-auto h5" style="margin: 20px 0!important;">business</span>
+            <p>This plan is for websites with more functionalities and contents such as blog website, news, ecommerce,business,etc.</p>
+            <span class="text-light rounded" style="font-size: 12px;padding: 5px;background-color: gold;">Starting from</span>
+            <h3 style="margin: 15px 0; display: flex;align-items: center;"><span class="text text-muted" style="font-size: 15px;text-decoration: line-through;margin-right: 10px;">GH&cent; 3,950</span> GH&cent; 3,500</h3>
+            <button class="btn btn-primary rounded-5 col-12" style="border: 2px solid royalblue;" id="selectPackage">Select package <i class="fa fa-arrow-right"></i></button>
+            <div class="container-fluid mb-4" style="position: relative;">
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>FREE domain & hosting for 1 year</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Custom web development</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Up to 15 pages</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Up to 25 products</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Booking funtionality</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>SSL Certificate</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Webhook functionality</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>E-commerce functionality</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Dark mode support</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Responsive design</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Blog and news section</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Copywriting</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Contact form</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Professional emails</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Social media integration</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-3 p-4 m-2 price" style="border: 2px solid rgb(162, 162, 247);border-radius: 30px;margin: 0 20px; background-color: rgba(173, 216, 230,0.3);height: fit-content;max-width: 400px;">
+            <span class="text-uppercase fw-bolder mx-auto h5" style="margin: 20px 0!important;">Advanced</span>
+            <p>This plan is for websites with complex features and integrations such as web application, social media, etc.</p>
+            <span class="text-light rounded" style="font-size: 12px;padding: 5px;background-color: gold;">Starting from</span>
+            <h3 style="margin: 15px 0; display: flex;align-items: center;"><span class="text text-muted" style="font-size: 15px;text-decoration: line-through;margin-right: 10px;">GH&cent; 10,200</span> GH&cent; 9,500</h3>
+            <button class="btn rounded-5 col-12" style="border: 2px solid royalblue;" id="selectPackage">Select package <i class="fa fa-arrow-right ms-1"></i></button>
+            <div class="container-fluid mb-4">
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>FREE domain & hosting for 1 year</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Custom web development</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Up to 50 pages</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Up to 100 products</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>API integration</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Webhook functionality</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Booking functionality</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>E-commerce functionality</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>SSL Certificate</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Dark mode support</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Responsive design</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Blog and news section</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Copywriting</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Contact form</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Professional emails</span>
+                </div>
+                <div class="item my-3">
+                    <i class="fa fa-check"></i>
+                    <span>Social media integration</span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <h4 class="text-center" style="margin-left:5rem;">Other Services</h4>
+
+    <div class="row d-flex gx-0">
+        <div class="container">
+            <ul class="other-prices">
+                <li>
+                    <h6>Web Redesign</h6>
+                    <p>GH&cent; 1,500</p>
+                    <span>Modern design, responsive and custom making it 100% yours</span>
+                </li>
+                <li>
+                    <h6>Web Maintenance</h6>
+                    <p>GH&cent; 400</p>
+                    <span>Maintaining your website for you with 100% support</span>
+                </li>
+                <li>
+                    <h6>IT Training and Tutorials</h6>
+                    <p>Not priced yet</p>
+                    <span>Empowering the young in the tech field</span>
+                </li>
+                <li>
+                    <h6>Logo Design</h6>
+                    <p>GH&cent;300</p>
+                    <span>Company's identity reflects logos to build your brand</span>
+                </li>
+                <li>
+                    <h6>Graphic Design</h6>
+                    <p>GH&cent;350</p>
+                    <span>Designing stunning flyers, graphics, post content, etc.</span>
+                </li>
+                <!-- <li>
+                    <h6>Windows installation</h6>
+                    <p>GH&cent;100</p>
+                    <span>Free drive with setup is given</span>
+                </li>
+                <li>
+                    <h6>Windows Activation</h6>
+                    <p>GH&cent;50</p>
+                    <span>Windows product key used to activate</span>
+                </li>
+                <li>
+                    <h6>Ms Office Installation</h6>
+                    <p>GH&cent;50</p>
+                    <span>Office Suite; Word, Excel,Power Point, Outlook and Access</span>
+                </li>
+                <li>
+                    <h6>Typing & Data Entry</h6>
+                    <p>GH&cent;5 per page</p>
+                    <span>Data entry in Word, Excel, etc. Price is per page</span>
+                </li> -->
+                
+            </ul>
+        </div>
+
+    </div>
+</section>
+<div class="page-section pt-2">
+    <h3 class="text-center">Frequently Asked Questions (FAQs)</h3>
+    <div class="accordion accordion-flush mx-auto">
+        <div class="accordion-item my-3">
+            <h2 class="accordion-header rounded-3">
+                <button class="accordion-button collapsed rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Which package is best suited for my products or company?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+                <div class="accordion-body">
+                    At Tenchoutech, we understand that choosing the right package for your products is crucial for ensuring both practicality and aesthetic appeal. Our team specializes in designing packaging solutions that align with your brand's values and enhance product presentation. Whether you're looking for eco-friendly materials, custom designs, or scalability options, we're here to collaborate and create packaging that meets your specific needs. Get in touch with us today to explore how we can elevate your product packaging to the next level.                        </div>
+            </div>
+        </div>
+        <div class="accordion-item my-3">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed  rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Whats are the requirements for using your services?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
+                <div class="accordion-body">
+                    To utilize our services at Tenchoutech, simply start with a consultation to discuss your product and branding needs. We'll collaborate closely on designing packaging that fits your specifications and brand identity, offering options including eco-friendly materials. Our process ensures high-quality production and scalability, whether for small runs or large-scale orders. Reach out today to explore how we can enhance your product packaging and brand presentation.                        </div>
+            </div>
+        </div>
+        <div class="accordion-item my-3">
+            <h2 class="accordion-header rounded-3" id="flush-headingThree">
+                <button class="accordion-button collapsed  rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    How do I make payment?
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree">
+                <div class="accordion-body">
+                    Making payments at Tenchoutech is easy. After finalizing your packaging project details, we'll issue an invoice outlining costs and payment terms. You can pay via bank transfer, credit/debit card, or electronic payment. Once your payment is confirmed, we'll proceed with production or service delivery as agreed. We strive to ensure a straightforward and transparent payment process for our clients' convenience.                        </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

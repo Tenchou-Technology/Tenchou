@@ -1,0 +1,394 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %} Modern Web development company{% endblock title %}
+{% block body %}
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="row d-flex" style="flex-direction: column;">
+                    <div class="masthead-subheading" style="width: fit-content;">Empower your business online with the best</div>
+                    <div class="masthead-heading text-uppercase" style="width: fit-content;">Tech Team</div>
+                    <div class="text-left intro" style="width: 50%;text-align: start;">Need a website that convert visitors into real customers,with modern design and user-friendly experience?
+                        It's time you choose right! Let us help you with your site.
+                    </div>
+                    <div class="cta-container" style="display: flex;">
+                        <a class="btn btn-primary btn-xl rounded-5 col-lg-2 cta mt-4 p-3 d-flex align-items-center justify-content-center" href="{% url "contact" %}">
+                            Contact Us
+                            <i class="fa fa-arrow-right m-2"></i>
+                        </a>
+                        <a class="btn btn-xl text-light rounded-5 col-lg-2 cta cta-2 mt-4 p-3 d-flex align-items-center justify-content-center" href="#portfolio" style="margin: 0 20px; border: 2px solid rgb(0, 76, 254)">
+                            Portfolio
+                            <i class="fa fa-arrow-right m-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- More  -->
+        <section class="page-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="margin-bottom: 3rem;">Why choose us?</h2>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-code fa-stack-1x fa-inverse" style="color: gold;"></i>
+                        </span>
+                        <h4 class="my-3">100% Custom</h4>
+                        <p class="text-muted">We code your website from design to functionality to awesome performance to meet your needs. Every aspect of is uniquely designed to make you stand out among your competitors.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse" style="color: gold;"></i>
+                        </span>
+                        <h4 class="my-3">Responsive Design</h4>
+                        <p class="text-muted">We ensure that your website looks and functions well on all devices.It automatically adjusts the layout, images, and other elements to provide an optimal user experience regardless of the device used.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-paintbrush fa-stack-1x fa-inverse" style="color: gold;"></i>
+                        </span>
+                        <h4 class="my-3">Modern Design</h4>
+                        <p class="text-muted">We give you a state of the art design. The kind that lures your web visitors into becoming lifetime clients. We believe in modernity and classiness.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About -->
+        <section class="page-section" id="about">
+            <div class="container-fluid">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About Us</h2>
+                    <h3 class="section-subheading text-muted">Who we actually are</h3>
+                </div>
+                <div class="row mb-4">
+                    <div class="about col-lg-10 mx-auto d-lg-flex p-3">
+                        <img src="{% static 'assets/img/Images/port7.jpg' %}" class="img-responsive me-4 col-lg-6 about-img" alt="About Tenchou Technology">
+                        <div class="text mt-3">
+                            <span class="h4">Our Story</span>
+                            <p>Tenchoutech (a modern web development company) was establish by a group of developers who have come together to empower businesses online as well as other services while offering tutorials to our students</p>
+                            <p>
+                                <b>Mission</b><br>
+                                At Tenchou Technology, our mission is to automate processes, innovate solutions, accelerate growth, and educate our clients, driving them towards a more efficient and successful future. We are dedicated to pioneering advancements that streamline operations, spark creativity, and empower businesses to thrive in the digital age <br>
+
+                                <b>Core Values</b><br>
+                                Automation | Innovation | Accelerating | Education <br>
+                                We believe in the power of automation to streamline processes, bringing out creative ideas into reality, providing cutting-edge technology solutions and educating the young generation with the skills needed to thrive in the digital era.
+                             </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-10 mx-auto p-3 pt-0">
+                        <br><b>Vision</b><br>
+                        Empowering businesses through innovative technology solutions, Tenchou envisions a future where seamless automation drives efficiency, constant innovation fuels growth, and comprehensive education empowers individuals and organizations to excel in the ever-evolving digital landscape. With our commitment to excellence and customer-centric approach, we aspire to be the catalyst for transformative change, shaping a world where technology empowers, connects, and inspires. <br>
+                        <br><b>Inspiration</b><br>
+                        We are inspired in tech field like web development, web applications development, graphic designing,AI,Machine Learning, logo designing, developing ideas and innovations, and bringing the ideas of our clients into reality.We believe Tech is driven by hardwork and passion so as to create modern and unique websites for our customers.
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="page-section service" id="services">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase" style="margin-bottom: 3rem;">Our services</h2>
+                <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
+            </div>
+            <div class="container-fluid" style="overflow-x: hidden;">
+                <div class="row text-center ps-lg-5 px-lg-3 d-lg-flex align-items-center justify-content-center" style="flex-wrap: nowrap;overflow: hidden;">
+                    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+                        <div class="carousel-inner d-flex align-items-start ps-lg-4 pt-4">
+                            <div class="carousel-item active rounded-5 p-4 mx-auto" style="border: 1px solid royalblue;">
+                                <a href="{% url "development" %}" class="top-content text-decoration-none text-dark">
+                                    <div class="caro-left mb-3 d-flex p-lg-1">
+                                        <img src="{% static 'assets/img/service/web development.jpg' %}" class="img rounded-3 me-2 f-width" alt="Modern website development" width="200px" height="200px">
+                                        <div class="caro-right d-flex flex-column">
+                                            <h3 class="text-uppercase mb-3 lower"> Web Development</h3>
+                                            <p class="text mb-4">Unlock the potential of your online presence with our expert web design services. From sleek aesthetics to seamless functionality, we'll create a captivating website that engages your audience and drives results.
+                                            </p>
+                                        </div>
+                                    </div><br>
+                                    <a href="{% url "pricing" %}" class="text text-center text-decoration-none text-light bg-primary rounded-5 mt-2 ms-3" style="font-size: large;padding: 1rem;margin-top: 20px!important;">See Pricing <i class="fa fa-arrow-right"></i></a>
+                                </a>
+                            </div>
+                            <div class="carousel-item rounded-5 p-4 mx-auto" style="border: 1px solid royalblue;">
+                                <a href="{% url "redesign" %}" class="top-content text-decoration-none text-dark">
+                                    <div class="caro-left mb-3 d-flex p-lg-1">
+                                        <img src="{% static 'assets/img/service/redesign.jpg' %}" class="img rounded-3 me-2 f-width" alt="Website redesign and development" width="200px" height="200px">
+                                        <div class="caro-right d-flex flex-column">
+                                            <h3 class="text-uppercase mb-3 lower"> Website Redesign</h3>
+                                            <p class="text mb-4">Elevate your online presence with our comprehensive web redesign services. Transform your website into a modern, user-friendly platform that reflects your brand's evolution and captivates your audience</p>
+                                        </div>
+                                    </div><br>
+                                    <a href="{% url "pricing" %}" class="text text-center text-decoration-none text-light bg-primary rounded-5 mt-2 ms-3" style="font-size: large;padding: 1rem;margin-top: 20px!important;">See Pricing <i class="fa fa-arrow-right"></i></a>
+                                </a>
+                            </div>
+                            <div class="carousel-item rounded-5 p-4 mx-auto" style="border: 1px solid royalblue;">
+                                <a href="maintenance" class="top-content text-decoration-none text-dark">
+                                    <div class="caro-left mb-3 d-flex p-lg-1">
+                                        <img src="{% static 'assets/img/service/support.jpg' %}" class="img rounded-3 me-2 f-width" alt="Website supports and maintenance" width="200px" height="200px">
+                                        <div class="caro-right d-flex flex-column">
+                                            <h3 class="text-uppercase mb-3 lower"> Web Maintenance</h3>
+                                            <p class="text mb-4">Keep your website running smoothly with our reliable web maintenance services. From regular updates to security checks, we ensure your site stays secure, up-to-date, and optimized for peak performance.</p>
+                                        </div>
+                                    </div><br>
+                                    <a href="{% url "pricing" %}" class="text text-center text-decoration-none text-light bg-primary rounded-5 mt-2 ms-3" style="font-size: large;padding: 1rem;margin-top: 20px!important;">See Pricing <i class="fa fa-arrow-right"></i></a>
+                                </a>
+                            </div>
+                            <div class="carousel-item rounded-5 p-4 mx-auto" style="border: 1px solid royalblue;">
+                                <a href="{% url "education" %}" class="top-content text-decoration-none text-dark">
+                                    <div class="caro-left mb-3 d-flex p-lg-1">
+                                        <img src="{% static 'assets/img/service/education.jpg' %}" class="img rounded-3 me-2 f-width" alt="Online education section" width="200px" height="200px">
+                                        <div class="caro-right d-flex flex-column">
+                                            <h3 class="text-uppercase mb-3 lower"> IT Training</h3>
+                                            <p class="text mb-4">Empower your team with our comprehensive IT training programs. From beginner to advanced courses, we equip professionals with the skills and knowledge needed to excel in today's tech-driven world.</p>
+                                        </div>
+                                    </div><br>
+                                    <a href="{% url "pricing" %}" class="text text-center text-decoration-none text-light bg-primary rounded-5 mt-2 ms-3" style="font-size: large;padding: 1rem;margin-top: 20px!important;">See Pricing <i class="fa fa-arrow-right"></i></a>
+                                </a>
+                            </div>
+                            <div class="carousel-item rounded-5 p-4 mx-auto" style="border: 1px solid royalblue;">
+                                <a href="{% url "standard" %}" class="top-content text-decoration-none text-dark">
+                                    <div class="caro-left mb-3 d-flex p-lg-1">
+                                        <img src="{% static 'assets/img/service/others.jpg' %}" class="img rounded-3 me-2 f-width" alt="Tech company's standard services" width="200px" height="200px">
+                                        <div class="caro-right d-flex flex-column">
+                                            <h3 class="text-uppercase mb-3 lower">Standard</h3>
+                                            <p class="text mb-4">We also offer services like Windows installation,Ms Office installation and activation, Data entry, and many more at affordable price</p>
+                                        </div>
+                                    </div><br>
+                                    <a href="{% url "pricing" %}" class="text text-center text-decoration-none text-light bg-primary rounded-5 mt-2 ms-3" style="font-size: large;padding: 1rem;margin-top: 20px!important;">See Pricing <i class="fa fa-arrow-right"></i></a>
+                                </a>
+                            </div>
+                            <button class="carousel-control-prev bg-primary prevNext" style="width: 40px;height:40px;top: 35%;margin: 0 160px;border-radius: 50%;padding: 6px;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next bg-primary prevNext" style="width: 40px;height:40px;top: 35%;margin: 0 140px;border-radius: 50%;padding: 6px;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Cycle-->
+
+        <section class="page-section" id="process">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Design process</h2>
+                    <h3 class="section-subheading text-muted">Worry free web development cycle</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><h1 style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;font-family: 'Times New Roman', Times, serif;-webkit-text-stroke: 2px gold;">1</h1></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>2009-2011</h4> -->
+                                <h4 class="subheading">Analysis & Planning</h4>
+                            </div>
+                            <div class="timeline-body">This phase, we gather useful informations about the project such as the <b>website goals</b>, the <b>website purpose</b>, and the <b>target audience. </b>We define our <b>sitemaps, website structure </b>and the <b>technologies</b> we will use</div>
+                        </div>
+                    </li>
+                    
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><h1 style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;font-family: 'Times New Roman', Times, serif;-webkit-text-stroke: 2px gold;">2</h1></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>July 2020</h4> -->
+                                <h4 class="subheading">Design & Development</h4>
+                            </div>
+                            <div class="timeline-body">This phase focuses on <b>Wireframe Models, Visual style, Usability(UI/UX).</b> We proceed to code your projects using frontend technologies and add databases(backend) while making it responsive for mobile devices</div>
+                        </div>
+                    </li>
+
+                    
+                    <li class="timeline">
+                        <div class="timeline-image">
+                            <h1 style="width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;font-family: 'Times New Roman', Times, serif;-webkit-text-stroke: 2px gold;">3</h1>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>December 2015</h4> -->
+                                <h4 class="subheading">Testing & Deployment</h4>
+                            </div>
+                            <div class="timeline-body">We take our project through technical testing, ensure browser compatibility and check if it really fulfills its aim. We finally deploy the project to online servers and also monitor, fix bugs and maintain the project regularly</div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-inverted" style="height: 250px;border: none;">
+                        <div class="timeline-image" id="lasten">
+                            <h4>
+                                Be Part
+                                <br />
+                                Of Our
+                                <br />
+                                Endeavor!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Businesses we've empowered to succeed online!</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4 rounded-5">
+                        <!-- Portfolio item 1-->
+                        <div class="p-item p-3 rounded-5" id="portfolio-item">
+                            <a class="portfolio-link text-decoration-none"  href="https://nuamahfarms.com" target='_blank' title="Open project" style="border-radius: 20px;">
+                                <div class="p-item-image" style="border-radius: 20px;overflow:hidden">
+                                    <img  src="{% static 'assets/img/Images/nuamah.png' %}" alt="Nuamah Farms landing page" width="100%" height="100%" />
+                                </div>
+                                <div class="p-text" style="color: #fff;">
+                                    <h6>Nuamah Farms</h6>
+                                    <p class="m-0">He wanted a website that showcases the farm and his product in the market</p>
+                                    <span class="badge bg-primary my-3">Business</span>
+                                </div>
+                            </a>
+                            <div class="text-center bg-warning text-light p-1 fw-bold" id="openProject" style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 rounded-5">
+                        <!-- Portfolio item 1-->
+                        <div class="p-item p-3 rounded-5" id="portfolio-item">
+                            <a class="portfolio-link text-decoration-none" href="https://pydanny21.github.io/codedanny" target='_blank' title="Open project" style="border-radius: 20px;">
+                                <div class="p-item-image" style="border-radius: 20px;overflow:hidden">
+                                    <img  src="{% static 'assets/img/Images/Screenshot (19).png' %}" alt="Code tutorial landing page" width="100%" height="100%" />
+                                </div>
+                                <div class="p-text" style="color: #fff;">
+                                    <h6>Code Danny</h6>
+                                    <p class="m-0">Landing page for a coding business startup</p>
+                                    <span class="badge bg-primary my-3">Business</span>
+
+                                </div>
+                            </a>
+                            <div class="text-center bg-warning text-light p-1 fw-bold" id="openProject" style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 rounded-5">
+                        <!-- Portfolio item 1-->
+                        <div class="p-item p-3 rounded-5" id="portfolio-item">
+                            <a class="portfolio-link text-decoration-none"  href="https://pydanny21.github.io/Ecommerce" target='_blank' title="Open project" style="border-radius: 20px;">
+                                <div class="p-item-image" style="border-radius: 20px;overflow:hidden">
+                                    <img  src="{% static 'assets/img/Images/Screenshot (50).png' %}" alt="Full stack ecommerce app" width="100%" height="100%" />
+                                </div>
+                                <div class="p-text" style="color: #fff;">
+                                    <h6>Cara</h6>
+                                    <p class="m-0">Ecommerce Website design</p>
+                                    <span class="badge bg-primary my-3">Ecommerce</span>
+                                </div>
+                            </a>
+                            <div class="text-center bg-warning text-light p-1 fw-bold" id="openProject" style="border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div style="display: flex;justify-content: flex-end;">
+                    <a class="btn btn-xl text-dark rounded-5 col-lg-2 cta mt-4 p-3 d-flex align-items-center justify-content-center" href="{% url "portfolio" %}" style="margin: 0 20px; border: 2px solid rgb(0, 76, 254)">
+                        View more
+                        <i class="fa fa-arrow-right m-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial -->
+        <section class="page-section" id="test">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Testimonials</h2>
+                <!-- <h3 class="section-subheading text-muted">Businesses we've empowered to succeed online!</h3> -->
+            </div>
+            <div class="testimonial p-lg-5 mx-auto d-flex" style="justify-content: space-evenly;">
+                <div class="carousel slide" data-bs-ride="carousel" id="Testimonial">
+                    <div class="carousel-indicators">
+                        <button data-bs-target="#Testimonial" data-bs-slide-to="0" class="bg-primary active" aria-current="true" aria-label="Slide 1">
+                        </button>
+                        <button data-bs-target="#Testimonial" data-bs-slide-to="1" class="bg-primary " aria-current="true" aria-label="Slide 2">
+                        </button>
+                        <button data-bs-target="#Testimonial" data-bs-slide-to="2" class="bg-primary " aria-current="true" aria-label="Slide ">
+                        </button>
+                    </div>
+                    <div class="carousel-inner d-flex align-items-start ps-lg-4 pt-4 test">
+                        <div class="carousel-item active    rounded-5 p-4 mx-auto" style="height: 400px;">
+                            <p class="fst-italic">"As the CEO of Nuamah Farms, I am delighted to express my utmost satisfaction with the website developed by Tenchou Technology. Their expertise and dedication in crafting a modern, user-friendly platform for our agricultural business have significantly enhanced our online presence and streamlined customer engagement. I wholeheartedly recommend Tenchou Technology to any organization seeking to elevate their digital footprint and drive business growth through innovative web solutions."</p>
+                            <p style="display: flex;align-items: center;">
+                                <img src="{% static 'assets/img/service/ceo-of-nuamahfarms.png' %}" alt="Website developed for Nuamah Farms" width="50px" height="50px" class="img-responsive rounded-circle m-3" style="object-fit: cover;background-color: #fff;">
+                                <span style="display: flex;flex-direction: column;align-items: center;"><strong>Mr. Philip Ofosu-Appiah</strong><span class="text-muted">CEO, Nuamah farms</span></span>
+                            </p>
+                        </div>
+                        <div class="carousel-item rounded-5 p-4 mx-auto" style="height: 400px;">
+                            <p class="fst-italic">"I am incredibly satisfied with the redesign and optimization services provided by Tenchou Technology. Their team not only revamped our website with a modern and user-friendly design but also optimized it for better visibility and engagement. The results were beyond our expectations, leading to increased traffic and conversions. I highly recommend Tenchou Technology to anyone looking to improve their online presence and drive business growth."</p>
+                            <p style="display: flex;align-items: center;">
+                                <img src="{% static 'assets/img/team/2.jpg' %}" alt="Testimonials" width="50px" height="50px" class="img-responsive rounded-circle m-3">
+                                <span style="display: flex;flex-direction: column;align-items: center;"><strong>Mad. Caroline Coffie </strong><span class="text-muted"></span></span>
+                            </p>
+                        </div>
+                        <div class="carousel-item rounded-5 p-4 mx-auto" style="height: 400px;">
+                            <p class="fst-italic">"My experience with Tenchou Technology's IT training sessions has been nothing short of exceptional. Their comprehensive courses on Excel, data entry, and programming languages have significantly enhanced my skills and value in the IT job market. I now feel more confident and competent in tackling complex IT tasks. I highly recommend Tenchou Technology to anyone looking to gain valuable IT knowledge and excel in their career."</p>
+                            <p style="display: flex;align-items: center;">
+                                <img src="{% static 'assets/img/team/3.jpg' %}" alt="Testimonials" width="50px" height="50px" class="img-responsive rounded-circle m-3">
+                                <span style="display: flex;flex-direction: column;align-items: center;"><strong>Mr. Prince Doku </strong><span class="text-muted">Student</span></span>
+                            </p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Team</h2>
+                    <h3 class="section-subheading text-muted">Of Expert Developers</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/pydanny21.jpg' %}" alt="PyDanny21's picture" />
+                            <h4>Daniel Quansah</h4>
+                            <p class="text-muted">Lead Developer</p>
+                            <a class="btn btn-warning btn-social mx-2" href="https://www.instagram.com/pydanny21" aria-label="PyDanny21 Instagram Profile"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-warning btn-social mx-2" href="https://www.facebook.com/pydanny21" aria-label="PyDanny21 Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-warning btn-social mx-2" href="https://www.linkedin.com/in/pydanny21" aria-label="PyDanny21 LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="{% static 'assets/img/team/ceo-of-nuamahfarms.png' %}" alt="Philip's picture" />
+                            <h4>Philip Ofosu-Appiah</h4>
+                            <p class="text-muted">Lead Marketer</p>
+                            <a class="btn btn-warning btn-social mx-2" href="#!" aria-label="Philip Ofosu-Appiah Instagram Profile"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-warning btn-social mx-2" href="#!" aria-label="Philip Ofosu-Appiah Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-warning btn-social mx-2" href="#!" aria-label="Philip Ofosu-Appiah LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <h4>Larry Parker</h4>
+                            <p class="text-muted">Lead Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+{% endblock body %}

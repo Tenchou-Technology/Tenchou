@@ -1,0 +1,187 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Modern technology and AI innovative company providing vast services while mentoring tech enthusiasts to achieve a better future." />
+        <meta name="author" content="Tenchou Technology" />
+        <meta name="keywords" content="Web development,AI,coding,programming,python,javascript,modern design,user-friendly, htmlcss,frontend,backend,designing,graphics,logo,software,technology,tech,tech company,need a website,build website,develop website, Web Apps, Graphic and logo designing, data entry,website,software development," />
+        <meta name="robots" content="index, follow" />
+        <title>Tenchoutech - {% block title %}{% endblock title %}</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'css/animate.css' %}" rel="stylesheet" />
+        <link rel="stylesheet" href="{% static 'bootstrap-5.3.3-dist/css/bootstrap.css' %}">
+    </head>
+    <body id="page-top">
+        <div id="preloder">
+            <div class="cssload-dots">
+                <div class="cssload-dot"></div>
+                <div class="cssload-dot"></div>
+                <div class="cssload-dot"></div>
+                <div class="cssload-dot"></div>
+                <div class="cssload-dot"></div>
+            </div>
+            
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>
+                        <!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg  navbar-dark fixed-top" id="mainNav">
+            {% block bg %}{% endblock bg %}
+            <div class="container">
+                <a class="navbar-brand text-light" href="{% url "index" %}" style="outline: none;border: none;"><img src="{% static 'assets/Photoroom-20240601_110958.png' %}" alt="Tenchoutech logo" class="img-responsive" style="width: 100px;height: 50px;object-fit: cover;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 d-flex align-items-center">
+                        <li class="nav-item">
+                            <div class="dropdown m-0">
+                                <button class="btn text-light text-uppercase fw-bold dropdown-toggle" style="outline: none;border: none;" type="button" id="services-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </button>
+                                <ol class="dropdown-menu" aria-labelledby="services-dropdown">
+                                    <li><a href="{% url "development" %}" class="dropdown-item">Web development</a></li>
+                                    <li><a href="{% url "redesign" %}" class="dropdown-item">Web Redesign</a></li>
+                                    <li><a href="{% url "maintenance" %}" class="dropdown-item">Web Maintenance</a></li>
+                                    <li><a href="{% url "education" %}" class="dropdown-item">IT Training</a></li>
+                                    <li><a href="{% url "standard" %}" class="dropdown-item">Standard Services</a></li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text fw-bold" href="{% url "portfolio" %}">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link text fw-bold" href="{% url "pricing" %}">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link text fw-bold" href="{% url "contact" %}">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link text fw-bold" href="tel:+233500374356"><i class="fa fa-phone"></i> +233500374356</a></li>
+                        <li class="nav-item">
+                            <button class="btn text-light fw-bold darkmode nav-link" type="button" aria-label="Toggle darkmode">
+                                <i class="fa fa-moon"></i>DARK
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        {% block body %}{% endblock body %}
+
+        <!-- Footer-->
+        <footer class="footer" style="background: #0b052c;position: relative;margin-top: 350px;">
+            <div class="row g-0 bg-primary text-light ad border rounded-5 p-3" style="position: absolute;top: -250px;box-shadow: 0 10px gold;">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="large">Talk to us about your dreams to digitize your business and we will make it happen</p>
+                    <div class="h4 fs-1" style="font-family:fantasy;">
+                        Building Eye Catchy website for clients
+                    </div>
+                    <!-- <span style="font-family: cursive;font-weight: 700;font-size: x-large;">You deserve better</span> -->
+                    <a class="btn btn-warning btn-xl rounded-5 col-lg-3 col-xs-8 col-md-4 mx-auto cta mt-4 p-3 d-flex align-items-center justify-content-center" href="{% url "contact" %}">
+                        Contact Us
+                        <i class="fa fa-arrow-right m-2"></i>
+                    </a>
+                </div>
+                
+            </div>
+            <div class="container-fluid mb-0 p-lg-5 p-4">
+                <ul class="text-center d-flex mx-auto col-lg-3 align-items-center justify-content-center mt-4" style="list-style: none;">
+                    <li><a href="https://www.facebook.com/profile.php?id=61559877811487" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://www.instagram.com/tenchou_technology" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-instagram fa-2x"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@tenchou.technolog" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-tiktok fa-2x"></i></a></li>
+                    <li><a href="https://x.com/@Tenchoutech" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-twitter fa-2x"></i></a></li>
+                    <li><a href="https://wa.me/+233500374356" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/tenchou-technology-294396314" class="text-decoration-none m-lg-3 m-2" style="color: gold;"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                </ul>
+                <div class="d-flex align-items-center footLinks" style="justify-content: space-evenly;">
+                    <div class="col-lg-4 text-light">
+                        <span class="text-center fw-bold">About us</span>
+                        <ul style="color: rgb(255, 187, 0);;">
+                            <li style="list-style: none;">Tenchou Technology</li>
+                            <p>Tenchoutech is a group of skilled and experienced developers who have come together to make your visions to transform your business online come through.</p>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 text-light">
+                        <span class="text-center fw-bold">Contact</span>
+                        <ul style="color: rgb(255, 187, 0);;">
+                            <li style="list-style: none;">Tenchou Tech</li>
+                            <li style="list-style: none;"><i class="fa fa-envelope"></i> tenchoutech@gmail.com</li>
+                            <li style="list-style: none;"><i class="fa fa-map-marker"></i> Fenou St. Sakumono</li>
+                            <li style="list-style: none;"><i class="fa fa-phone"></i> +233500374356</li>
+                        </ul>
+                    </div>
+                    <div class="col-4 text-light">
+                        <span class="text-center fw-bold">Services</span>
+                        <ul>
+                            <li style="list-style: none;"><a href="{% url "development" %}" style="text-decoration: none;color: rgb(255, 187, 0);">  Web Development</a></li>
+                            <li style="list-style: none;"><a href="{% url "redesign" %}" style="text-decoration: none;color: rgb(255, 187, 0);">  Web Redesign</a></li>
+                            <li style="list-style: none;"><a href="{% url "maintenance" %}" style="text-decoration: none;color: rgb(255, 187, 0);">  Web Maintenance</a></li>
+                            <li style="list-style: none;"><a href="{% url "education" %}" style="text-decoration: none;color: rgb(255, 187, 0);">  Online Education</a></li>
+                            <li style="list-style: none;"><a href="{% url "standard" %}" style="text-decoration: none;color: rgb(255, 187, 0);">  Standard Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="text text-light">Tenchoutech &copy; Copyright s<script>document.write(new Date().getFullYear());</script>. All rights reserved</p>
+            </div>
+        </footer>
+        <div class="whatsapp" style="position: fixed;bottom: 20px; right: 20px;background: green;border-radius: 50%;padding: 5px;width: 50px;height: 50px;display: flex;align-items: center;justify-content: center;">
+            <a href="https://wa.me/+233500374356" target="_blank"><i class="fab fa-whatsapp fa-2x" style="color: #fff;"></i></a>
+            <span class="badge bg-danger rounded-circle" style="position: absolute;top: 0;left: 0;width: 18px;height: 18px;display: flex;align-items: center;justify-content: center;">2</span>
+        </div>
+        <!-- <div class="checkout" style="padding: 10% 0; position: fixed;top: 0;left: 0;background: rgba(0, 0, 0,0.4);width: 100%;height: 100%;z-index: 99999;">
+            <div class="container-fluid p-lg-4 p-2 pt-4 rounded-3 check-container mx-auto">
+                <h5 class="text-left">Shall we call you back?</h5>
+                <span>Please fill out the form</span>
+                <form action="" method="post" class="form">
+                    <div class="first-info d-flex flex-wrap justify-content-evenly">
+                        <div class="form-item">
+                            <label for="username">Full Name</label>
+                            <input type="text" placeholder="Enter Your Name" name="username" id="username" required >
+                        </div>
+                       
+                        <div class="form-item">
+                            <label for="Phone">Phone</label>
+                            <input type="number" placeholder="Phone Number" name="Phone" id="Phone" required>
+                        </div>
+                        
+                        <label class="w-100 py-2 px-4">What time should we call you?</label>
+                        <select name="time" id="time">
+                            <option value="morning">7am - 12noon</option>
+                            <option value="afternoon">1pm - 5pm</option>
+                            <option value="morning">6pm - 10pm</option>
+                        </select>
+                    </div>                   
+                   
+                    <button class="btn btn-primary p-3 rounded-5 col-md-4 col-5 fw-bold mx-auto d-flex align-items-center justify-content-center">
+                        Call Me Back
+                    </button>
+                </form>
+                <div class="close" ><i class="fa fa-times"></i></div>
+            </div>
+        </div> -->
+        <script src="{% static 'js/scripts.js' %}"></script>
+
+        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+        <script src="{% static 'bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js' %}"></script>
+        <script>
+            window.addEventListener('load', function() {
+                // Fade out the loader
+                var loader = document.getElementById('preloder');
+                loader.classList.add('loaded');
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}Online education{% endblock title %}
+{% block body %}
+{% block bg %}
+    <style>
+        #mainNav{
+            background: #0d6efd;
+        }
+    </style>
+{% endblock bg %}
+        <section class="page-section">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase mt-5">Online Education</h2>
+                <!-- <h3 class="section-subheading text-muted mb-5">Very Affordable Prices</h3> -->
+            </div>
+            <br>
+            <div class="row d-flex justify-content-center">
+                <img src="{% static 'assets/img/service/education.jpg' %}" alt="Online tutorials" class="img-responsive rounded-5 col-lg-5 col-11" style="max-height: 500px;">
+                <div class="col-lg-4 p-3">
+                    <h3 class="">
+                        Our Online Tutorials!
+                    </h3>
+                    <p>
+                        Embark on a transformative journey into the world of IT with Tenchou Technology. Whether you're a novice eager to delve into the fundamentals or a seasoned professional seeking to expand your expertise, we have the tools, resources, and support to guide you every step of the way.
+
+                        Our comprehensive online IT studies offer a dynamic learning experience tailored to your unique goals and aspirations. From in-depth courses covering programming languages, cybersecurity, cloud computing, and more, to hands-on projects and real-world simulations, we empower you to master the skills demanded by today's digital landscape.
+
+                        Join a community of like-minded learners, collaborate with industry experts, and unlock endless opportunities for career advancement. Whether you're looking to kickstart a new career path, upskill for your current role, or stay ahead of the curve in a rapidly evolving industry, we're here to help you succeed.  
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="page-section pt-0">
+            <h3 class="text-center">What you can expect</h3>
+            
+            <div class="container expectations">
+                <div class="expect">                    
+                    <b>Comprehensive Curriculum</b> <br> Access to a well-structured curriculum covering all aspects of web development, from basic HTML and CSS to advanced JavaScript frameworks and server-side programming languages.
+                </div>
+                <div class="expect">                    
+                    <b>Hands-on-Projects</b> <br> Opportunities to work on real-world projects and exercises, allowing them to apply theoretical knowledge to practical scenarios and build a professional portfolio showcasing their skills.
+                </div>
+                <div class="expect">                    
+                    <b>Expert Instructions</b>Guidance from experienced instructors who are industry professionals with extensive knowledge and expertise in web development, offering valuable insights, tips, and best practices.
+                </div>
+                <div class="expect">                    
+                    <b>Interactive Learning</b> <br> Engaging and interactive learning experiences through multimedia content, quizzes, assignments, and discussions, fostering active participation and deepening understanding.
+                </div>
+                <div class="expect">                    
+                    <b>Flexibility</b><br> Flexible learning options, including self-paced courses, live sessions, and on-demand resources, allowing them to learn at their own pace and accommodate their busy schedules.
+                </div>
+                <div class="expect">                    
+                    <b>Continuous Updates</b><br> Regular updates to course content and materials to reflect the latest trends, technologies, and best practices in web development, ensuring that learners stay current and competitive in the field.
+                </div>
+                <div class="expect">                    
+                    <b>Certification</b><br> Option to earn certificates upon completion of courses, demonstrating proficiency and commitment to excellence in web development, which can enhance their credibility and career prospects.
+                </div>
+            </div>
+        </section>
+{% endblock body %}

@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %} Standard services{% endblock title %}
+{% block body %}
+{% block bg %}
+    <style>
+        #mainNav{
+            background: #0d6efd;
+        }
+    </style>
+{% endblock bg %}
+<section class="page-section">
+    <div class="text-center">
+        <h2 class="section-heading text-uppercase mt-5">Standard Services</h2>
+        <!-- <h3 class="section-subheading text-muted mb-5">Very Affordable Prices</h3> -->
+    </div>
+    <br>
+    <div class="row d-flex justify-content-center">
+        <img src="{% static 'assets/img/service/others.jpg' %}" alt="Other services" class="img-responsive rounded-5 col-lg-8 col-11" style="object-fit: cover;object-position: center top;">
+    </div>
+</section>
+<section class="page-section" style="padding: 0;">
+    <h3 class="text-center">What you can expect</h3>
+    
+    <div class="container expectations">
+        <div class="expect">                    
+            <b>Windows Installation</b> <br> Our team can help you with windows installation whether, the latest version of windows or the windows xp operating system.
+        </div>
+        <div class="expect">                    
+            <b>Windows Activation</b> <br> We will also activate your windows for you to make sure you don't have any interruptions or bad experiences.
+        </div>
+        <div class="expect">                    
+            <b>MS Office Installation</b> If you want Microsoft Office installation, we can help you with that and also activate it for you.
+        </div>
+        <div class="expect">                    
+            <b>Logo Designing</b> <br> We design company logos to reflect the company or the organization's mission and purpose while making sure it stands out among competitors.
+        </div>
+        <div class="expect">                    
+            <b>Graphic Designing</b><br> We work on all kinds of posts, flyers, designs, and everything graphic designing with Photoshop and other tools.
+        </div>
+        <div class="expect">                    
+            <b>Data Entry</b> <br> We also do data entry work from word,excel,google sheets, et cetera while paying attention to details in other to achieve 100% accuracy.
+        </div>
+        <div class="expect">                    
+            <b>Records Keeping</b> <br> We can also help you keep your records safe and analyze your data for you with excel and other platforms.
+        </div>
+
+    </div>
+</section>
+{% endblock body %}

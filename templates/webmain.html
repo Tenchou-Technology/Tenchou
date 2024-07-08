@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %} Website maintenance{% endblock title %}
+{% block body %}
+{% block bg %}
+    <style>
+        #mainNav{
+            background: #0d6efd;
+        }
+    </style>
+{% endblock bg %}
+<section class="page-section">
+    <div class="text-center">
+        <h2 class="section-heading text-uppercase mt-5">Maintenance</h2>
+        <!-- <h3 class="section-subheading text-muted mb-5">Very Affordable Prices</h3> -->
+    </div>
+    <br>
+    <div class="row d-flex justify-content-center">
+        <img src="{% static 'assets/img/service/support.jpg' %}" alt="Web maintenance" class="img-responsive rounded-5 col-lg-5 col-11" style="max-height: 500px;">
+        <div class="col-lg-5 p-3">
+            <h3 class="">
+                Management and updates
+            </h3>
+            <p>
+              
+                Unlock Your Website's Full Potential with Expert Management
+
+                At Tenchoutech, we understand that your website is more than just an online presence. <br>
+
+                Why choose us?<br>
+
+                - <b>Proactive Monitoring:</b>We keep a vigilant eye on your website's performance, preemptively addressing any issues before they impact your visitors.
+                
+                - <br><b>Security Updates:</b> Stay ahead of threats with regular security patches and updates, ensuring your site is always protected.
+
+                - <br><b>Performance Optimization:</b> We fine-tune your site for speed and responsiveness, providing your visitors with a seamless browsing experience.
+
+                - <br><b>Content Updates:</b> Keep your website fresh and engaging with regular content updates and improvements.
+
+                - <br><b>SEO Enhancement:</b> Drive more organic traffic with ongoing SEO improvements tailored to your business goals.
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock body %}
